@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON</title>
+  </head>
+  <body>
+    <p>File with a script element.</p>
+    <script>
+      const o1 = { x: 3, y: 5 };
+      console.log(o1.x);
+      console.log(o1.y);
+
+      const s1 = JSON.stringify(o1);
+      console.log(o1);
+      console.log("stringified: " + s1);
+
+      const s2 = '{ "a": 31, "b": 78 }';
+      const o2 = JSON.parse(s2);
+      console.log(o2);
+      console.log(o2.a);
+      console.log(o2.b);
+    </script>
+  </body>
+</html>
